@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      color:#202b38;
+      background-color: #b1c3d8;
+    }
+
+    main {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 5fr
+    }
+
+    textarea {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Muhosira</h1>
+    <p>Add sites to be blocked. One patterns per line. The patterns syntax is described
+      <a href="https://developer.chrome.com/extensions/match_patterns">here</a>.
+    </p>
+    <button id="submit" type="submit">save</button>
+    <textarea id="patterns" placeholder="*://*.google.be/*" autofocus></textarea><br>
+  </main>
+</body>
+<script src="options.js"></script>
+
+</html>
